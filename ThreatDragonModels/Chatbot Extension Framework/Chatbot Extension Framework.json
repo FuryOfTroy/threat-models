@@ -1,0 +1,11 @@
+{
+  "summary": {
+    "title": "Chatbot Extension Framework",
+    "owner": "Alex Hanlon",
+    "description": "A simple framework that can easily allow me to specify which robots can be run by whom and where relying on nothing but an import of your library/module and configuration data instructing the bot on the limitations."
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": []
+  }
+}
