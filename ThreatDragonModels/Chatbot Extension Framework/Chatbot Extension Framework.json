@@ -6,13 +6,6 @@
   },
   "detail": {
     "contributors": [],
-    "diagrams": [
-      {
-        "title": "Chatbot Extension Framework",
-        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "diagramType": "STRIDE",
-        "id": 0
-      }
-    ]
+    "diagrams": []
   }
 }
