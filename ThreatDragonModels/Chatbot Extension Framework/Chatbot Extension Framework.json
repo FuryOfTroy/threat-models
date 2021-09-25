@@ -9,9 +9,147 @@
     "diagrams": [
       {
         "title": "Chatbot Framework",
-        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "diagramType": "STRIDE",
-        "id": 0
+        "thumbnail": "./public/content/images/thumbnail.linddun.jpg",
+        "diagramType": "LINDDUN",
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 7,
+                "y": 239
+              },
+              "angle": 0,
+              "id": "6b5eba36-cba7-4f82-82a7-b7b86d2935aa",
+              "z": 1,
+              "hasOpenThreats": false,
+              "description": "Chatbot User",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "User"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 504,
+                "y": 185
+              },
+              "angle": 0,
+              "id": "974c6d0f-2557-42fa-9d4b-afb1439cbd0d",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "ChatBot API"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 217,
+                "y": 162
+              },
+              "angle": 0,
+              "id": "a942d3dd-4f22-4cd2-9ff1-2954916cc9d6",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Web Browser"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 217,
+                "y": 300
+              },
+              "angle": 0,
+              "id": "0f4fdd20-a680-4516-bbe3-fad633963e0d",
+              "z": 4,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Chatbot CLI"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 104,
+                "y": 104
+              },
+              "target": {
+                "x": 177,
+                "y": 582
+              },
+              "vertices": [
+                {
+                  "x": 399,
+                  "y": 243
+                }
+              ],
+              "id": "7a3bd468-d2b0-48a1-947f-b50517bb7467",
+              "z": 5,
+              "attrs": {}
+            }
+          ]
+        },
+        "size": {
+          "height": 885,
+          "width": 790
+        }
       }
     ]
   }
