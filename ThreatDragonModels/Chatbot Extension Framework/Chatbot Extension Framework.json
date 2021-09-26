@@ -9,110 +9,33 @@
     "diagrams": [
       {
         "title": "Chatbot Framework",
-        "thumbnail": "./public/content/images/thumbnail.linddun.jpg",
-        "diagramType": "LINDDUN",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "diagramType": "STRIDE",
         "id": 0,
         "diagramJson": {
           "cells": [
             {
-              "type": "tm.Actor",
-              "size": {
-                "width": 160,
-                "height": 80
-              },
-              "position": {
-                "x": 7,
-                "y": 239
-              },
-              "angle": 0,
-              "id": "6b5eba36-cba7-4f82-82a7-b7b86d2935aa",
-              "z": 1,
-              "hasOpenThreats": false,
-              "description": "Chatbot User",
-              "attrs": {
-                ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
-                },
-                "text": {
-                  "text": "User"
-                },
-                ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
               "type": "tm.Process",
               "size": {
                 "width": 100,
                 "height": 100
               },
               "position": {
-                "x": 504,
-                "y": 185
+                "x": 713,
+                "y": 198
               },
               "angle": 0,
-              "id": "974c6d0f-2557-42fa-9d4b-afb1439cbd0d",
+              "id": "fa0ca02e-e025-405a-880d-b439e5506948",
               "z": 2,
               "hasOpenThreats": false,
+              "description": "Performs NLP on user input to produce Intent, specifying either a command to run,",
+              "threats": [],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "ChatBot API"
-                },
-                ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
-              "type": "tm.Process",
-              "size": {
-                "width": 100,
-                "height": 100
-              },
-              "position": {
-                "x": 217,
-                "y": 162
-              },
-              "angle": 0,
-              "id": "a942d3dd-4f22-4cd2-9ff1-2954916cc9d6",
-              "z": 3,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
-                },
-                "text": {
-                  "text": "Web Browser"
-                },
-                ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
-              "type": "tm.Process",
-              "size": {
-                "width": 100,
-                "height": 100
-              },
-              "position": {
-                "x": 217,
-                "y": 300
-              },
-              "angle": 0,
-              "id": "0f4fdd20-a680-4516-bbe3-fad633963e0d",
-              "z": 4,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
-                },
-                "text": {
-                  "text": "Chatbot CLI"
+                  "text": "ChatBot\nService"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -127,28 +50,634 @@
               },
               "smooth": true,
               "source": {
-                "x": 104,
-                "y": 104
+                "x": 674,
+                "y": 1
               },
               "target": {
-                "x": 177,
-                "y": 582
+                "x": 1177,
+                "y": 307
               },
               "vertices": [
                 {
-                  "x": 399,
-                  "y": 243
+                  "x": 674,
+                  "y": 324
                 }
               ],
-              "id": "7a3bd468-d2b0-48a1-947f-b50517bb7467",
-              "z": 5,
+              "id": "cc659149-ce1d-4368-926d-7c70b905eb9e",
+              "z": 8,
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "ChatBot VPC",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
               "attrs": {}
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 1018,
+                "y": 425
+              },
+              "angle": 0,
+              "id": "ae5fe7d8-346a-4be6-8952-2cc21ff2f026",
+              "z": 12,
+              "hasOpenThreats": false,
+              "description": "",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "IDP API"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 950,
+                "y": 575
+              },
+              "target": {
+                "x": 1171,
+                "y": 561
+              },
+              "vertices": [
+                {
+                  "x": 1071,
+                  "y": 368
+                }
+              ],
+              "id": "3200c043-2011-41fd-aa79-5ccb51863d49",
+              "z": 13,
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "IDP VPC",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "attrs": {}
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 757,
+                "y": 8
+              },
+              "angle": 0,
+              "id": "5fc514f4-2cbf-44df-890d-c4dea44ed924",
+              "z": 15,
+              "hasOpenThreats": false,
+              "description": "Assumed to be a JSON file on disk in the same folder as the policy library",
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Denial of service",
+                  "title": "Config lost if storage location is lost",
+                  "description": "If the configuration file is stored on a single machine and that machine crashes, all of the policies will be lost",
+                  "mitigation": "Config will be stored in a more redundant and reliable storage location like Amazon S3 or personal data cloud. It will be up to the Chatbot service to retrieve the file and pass the contents to the policy library during initialization",
+                  "threatId": "9af912b2-837f-40aa-a224-69dac62ad3f8"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Policy Library Config"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "fa0ca02e-e025-405a-880d-b439e5506948"
+              },
+              "target": {
+                "id": "0b04c4f5-b14b-490c-9c54-cd7911afc456"
+              },
+              "vertices": [
+                {
+                  "x": 903,
+                  "y": 197
+                }
+              ],
+              "id": "e843d3bc-fe33-4acc-a47e-431cf0a63f90",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Policy Library Config",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 16,
+              "hasOpenThreats": false,
+              "protocol": "Passed in Constructor",
+              "isEncrypted": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 992,
+                "y": 205
+              },
+              "angle": 0,
+              "id": "0b04c4f5-b14b-490c-9c54-cd7911afc456",
+              "z": 19,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Denial of service",
+                  "title": "Performance-based DOS",
+                  "description": "If the user resolution and policy checking takes too long, then it can cause performance issues for the Chatbot service",
+                  "threatId": "4054a51b-7a4d-4f7f-8f2f-1d9e23a00989"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Elevation of privilege",
+                  "title": "Abusing bad policies",
+                  "description": "If the Chatbot owner doesn't configure the policy library properly, some users may be able to run commands that shouldn't be run",
+                  "threatId": "196cfc2d-893f-4ae9-8e03-e764ec27a31e"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "type": "Denial of service",
+                  "title": "Unable to access IDP API",
+                  "description": "If the IDP API goes down, then the library won't be able to validate user requests and the chatbot will stop working",
+                  "threatId": "ecb319dd-f060-4130-8797-e0f952e27592"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "title": "Unable to access credential manager",
+                  "type": "Denial of service",
+                  "description": "If the credential manager API goes down, then the library won't be able to validate user requests and the chatbot will stop working",
+                  "threatId": "20f54678-7559-4f4d-88a5-842017af9b21"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Tampering",
+                  "title": "SSRF to leak IDP credentials",
+                  "description": "If the IDP API URL is somehow tampered to point to an attacker controlled endpoint, then the credentials pass in the request would be leaked to that attacker",
+                  "threatId": "51247bcb-8228-40e1-ba39-5961e4fe2f84"
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Denial of service",
+                  "title": "Exceeding rate limit of IDP API",
+                  "description": "If a particularly malicious or impatient user sends too many requests in a short amount of time, and the policy library needs to retrieve the user context from the IDP for each request, a rate-limit could be exceeded and the Chatbot will start having to reject non-malicious requests",
+                  "mitigation": "The policy library will cache user attribute/claims for a short period of time",
+                  "threatId": "84b33124-572a-49e9-83ab-1bd0a57d250c"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Policy Library"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "fa0ca02e-e025-405a-880d-b439e5506948"
+              },
+              "target": {
+                "id": "0b04c4f5-b14b-490c-9c54-cd7911afc456"
+              },
+              "vertices": [],
+              "id": "8bf1f588-af8b-4e07-90df-0a9fd7e71b62",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "User and Action IDs",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 20,
+              "hasOpenThreats": true,
+              "description": "",
+              "protocol": "Function Call",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Spoofing",
+                  "title": "Spoofed User",
+                  "description": "If the Chatbot did not perform proper user authentication, then the authorization step within the library is meaningless",
+                  "threatId": "743d84eb-64b5-435d-94cc-43d4ef08f5e1"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Denial of service",
+                  "title": "Missing or corrupted config file",
+                  "description": "If the config file is missing or malformed, the library will fail to initialize and the chatbot will not function",
+                  "threatId": "4fcdabc1-fac5-4a26-8ee0-e2e8217afac1"
+                }
+              ],
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "0b04c4f5-b14b-490c-9c54-cd7911afc456"
+              },
+              "target": {
+                "id": "ae5fe7d8-346a-4be6-8952-2cc21ff2f026"
+              },
+              "vertices": [
+                {
+                  "x": 1156,
+                  "y": 354
+                }
+              ],
+              "id": "c418a309-7053-4f8a-9ceb-b18f7fd3e567",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "User ID",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 21,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "ae5fe7d8-346a-4be6-8952-2cc21ff2f026"
+              },
+              "target": {
+                "id": "0b04c4f5-b14b-490c-9c54-cd7911afc456"
+              },
+              "vertices": [
+                {
+                  "x": 1013,
+                  "y": 328
+                }
+              ],
+              "id": "fe4c1992-a9e8-4346-a953-a795adca41c9",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.47759436950763706,
+                    "offset": -5.3688285648556375
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "User Token/Context",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 22,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 605,
+                "y": 541
+              },
+              "target": {
+                "x": 831,
+                "y": 549
+              },
+              "vertices": [
+                {
+                  "x": 719,
+                  "y": 379
+                }
+              ],
+              "id": "a9ca6eaa-6f07-4c04-9127-e7e7c42bdf52",
+              "z": 23,
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Credential Manager\nVPC",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "attrs": {}
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 669,
+                "y": 425
+              },
+              "angle": 0,
+              "id": "d7ea3910-de0c-422a-8a57-83a1fe3112b9",
+              "z": 24,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Credential\nManager API"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "d7ea3910-de0c-422a-8a57-83a1fe3112b9"
+              },
+              "target": {
+                "id": "0b04c4f5-b14b-490c-9c54-cd7911afc456"
+              },
+              "vertices": [],
+              "id": "cc095fa1-39bc-45fb-99c0-ed9217aa6058",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "IDP Access\nCredentials",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 25,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 327,
+                "y": 210
+              },
+              "angle": 0,
+              "id": "be080d50-4593-4d7a-abd7-1f1d37063aa6",
+              "z": 26,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "User"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "be080d50-4593-4d7a-abd7-1f1d37063aa6"
+              },
+              "target": {
+                "id": "fa0ca02e-e025-405a-880d-b439e5506948"
+              },
+              "vertices": [],
+              "id": "c9ec3be3-34e7-49c7-a05b-a533e19fb9d1",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Request +\nUser/Session ID",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 27,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPS/",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "5fc514f4-2cbf-44df-890d-c4dea44ed924"
+              },
+              "target": {
+                "id": "fa0ca02e-e025-405a-880d-b439e5506948"
+              },
+              "vertices": [],
+              "id": "542f32fb-81a5-4b79-85fa-833685299b24",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Policy Library Config",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 28,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
         "size": {
           "height": 885,
-          "width": 790
+          "width": 1674
         }
       }
     ]
