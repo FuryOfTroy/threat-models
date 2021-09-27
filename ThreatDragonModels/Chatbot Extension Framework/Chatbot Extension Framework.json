@@ -243,13 +243,14 @@
               "hasOpenThreats": true,
               "threats": [
                 {
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "modelType": "STRIDE",
                   "type": "Denial of service",
                   "title": "Performance-based DOS",
                   "description": "If the user resolution and policy checking takes too long, then it can cause performance issues for the Chatbot service",
-                  "threatId": "4054a51b-7a4d-4f7f-8f2f-1d9e23a00989"
+                  "threatId": "4054a51b-7a4d-4f7f-8f2f-1d9e23a00989",
+                  "mitigation": "User context will be cached for short periods of time to reduce round trips to IDP"
                 },
                 {
                   "status": "Open",
@@ -267,7 +268,8 @@
                   "type": "Denial of service",
                   "title": "Unable to access IDP API",
                   "description": "If the IDP API goes down, then the library won't be able to validate user requests and the chatbot will stop working",
-                  "threatId": "ecb319dd-f060-4130-8797-e0f952e27592"
+                  "threatId": "ecb319dd-f060-4130-8797-e0f952e27592",
+                  "mitigation": "Caching will only help for very short outages or network hiccups, so this is still a valid concern"
                 },
                 {
                   "status": "Open",
@@ -279,13 +281,14 @@
                   "threatId": "20f54678-7559-4f4d-88a5-842017af9b21"
                 },
                 {
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "modelType": "STRIDE",
                   "type": "Tampering",
                   "title": "SSRF to leak IDP credentials",
-                  "description": "If the IDP API URL is somehow tampered to point to an attacker controlled endpoint, then the credentials pass in the request would be leaked to that attacker",
-                  "threatId": "51247bcb-8228-40e1-ba39-5961e4fe2f84"
+                  "description": "If the IDP API URL is somehow tampered to point to an attacker controlled endpoint, then the credentials pass in the request would be leaked to that attacker. This may be possible if the IDP accepts the username in the URL query string",
+                  "threatId": "51247bcb-8228-40e1-ba39-5961e4fe2f84",
+                  "mitigation": "The chatbot service is expected to authenticate users for valid usernames, but if malicious usernames can be constructed by some means, the username will be properly URL encoded when added to the request URL"
                 },
                 {
                   "status": "Mitigated",
@@ -352,13 +355,14 @@
                   "threatId": "743d84eb-64b5-435d-94cc-43d4ef08f5e1"
                 },
                 {
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "modelType": "STRIDE",
                   "type": "Denial of service",
                   "title": "Missing or corrupted config file",
                   "description": "If the config file is missing or malformed, the library will fail to initialize and the chatbot will not function",
-                  "threatId": "4fcdabc1-fac5-4a26-8ee0-e2e8217afac1"
+                  "threatId": "4fcdabc1-fac5-4a26-8ee0-e2e8217afac1",
+                  "mitigation": "Config file expected to be stored in properly secured and reliable storage area"
                 }
               ],
               "attrs": {
@@ -765,6 +769,18 @@
               "z": 31,
               "hasOpenThreats": false,
               "description": "Custom plugin for each user context schema",
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Tampering",
+                  "title": "Malicious plugin that modifies user attributes",
+                  "description": "A malicious IDP schema connector could tamper with user permissions if provided by a malicious user",
+                  "mitigation": "Policy library configuration file will be subject to strict access control and appropriate logging and alerting when accessed",
+                  "threatId": "aaa75c82-9ab5-4494-8889-f3090f357ff8"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
